@@ -1,0 +1,19 @@
+$def with(datos)
+<center><a href="/"><h1>Eliminar instrumento</h1></a>
+
+
+<form method="POST">
+  <center><label for="nombre">Nombre</label></center>
+  <center><input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre"></center>
+  <br>
+  <center><label for="marca">Marca</label></center>
+  <center><input type="marca" readonly="true" value="$datos.marca" id="marca" name="marca"></center>
+  <br>
+  <center><label for="modelo">Modelo</label></center>
+  <center><input type="modelo" readonly="true" value="$datos.modelo" id="modelo" name="modelo"></center>
+  <br>
+  <center><label for="color">Color</label></center>
+  <center><input type="color" readonly="true" value="$datos.color" id="color" name="color"></center>
+  <br>
+      <center><button type="submit" class="btn btn-primary">eliminar</button></center>
+</form>

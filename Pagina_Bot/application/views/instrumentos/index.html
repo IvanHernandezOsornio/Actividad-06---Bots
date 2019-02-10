@@ -1,0 +1,27 @@
+$def with(datos)
+
+<center><h1>Base de datos</h1></center>
+<center><h1>Spirit Of Fire</h1></center>
+
+
+<center><table border="5">
+    <th>Nombre</th>
+    <th>Marca</th>
+    <th>Modelo</th>
+    <th>Color</th>    
+    <th>Actualizar</th>
+    <th>Eliminar</th>
+    $for row in datos:
+        <tr>
+            <td>$row.nombre</td>
+            <td>$row.marca</td>
+            <td>$row.modelo</td>
+            <td>$row.color</td>
+            <td><a href="/delete/$row.nombre">Eliminar</a></td>
+            <td><a href="/update/$row.nombre">Actualizar</a></td>
+        </tr>
+</table></center>
+<br>
+<br>
+<center><a href="/insert"><h2>Agregar Intrumento</h2></a></center>
+

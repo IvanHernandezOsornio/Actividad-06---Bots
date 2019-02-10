@@ -1,0 +1,18 @@
+$def with(datos)
+<center><a href="/"><h1>Actualizar Informacion del Instrumento</h1></a></center>
+
+<form method="POST">
+    <center><label for="nombre">Nombre</label></center>
+    <center><input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre"></center>
+    <br>
+    <center><label for="marca">Marca</label></center>
+    <center><input type="marca" value="$datos.marca" id="marca" name="marca"></center>
+    <br>
+    <center><label for="modelo">Modelo</label></center>
+    <center><input type="modelo" value="$datos.modelo" id="modelo" name="modelo"></center>
+    <br>
+    <center><label for="color">Color</label></center>
+    <center><input type="color" value="$datos.color" id="color" name="color"></center>
+    <br>    
+    <center><button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
